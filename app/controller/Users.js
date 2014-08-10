@@ -12,12 +12,12 @@ Ext.define('ExtJS5Explorer.controller.Users', {
         this.callParent();
     },
     routes: {
+        'users': {
+            action: 'onUsers'
+        },
         'users/:id': {
             action: 'onUserDetail',
             before: 'onBeforeUserDetail'
-        },
-        'users': {
-            action: 'onUsers'
         }
     },
     /**
